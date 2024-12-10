@@ -27,22 +27,10 @@ function updateContent(contentId) {
   
 
 
-  document.getElementById('content1').addEventListener('click', function() {
-    updateContent('content1');
-  });
-  document.getElementById('content2').addEventListener('click', function() {
-    updateContent('content2');
-  });
-  document.getElementById('content3').addEventListener('click', function() {
-    updateContent('content3');
-  });
-  document.getElementById('content4').addEventListener('click', function() {
-    updateContent('content4');
-  });
-  document.getElementById('content5').addEventListener('click', function() {
-    updateContent('content5');
-  });
-  document.getElementById('content6').addEventListener('click', function() {
-    updateContent('content6');
-  });
+  for (let i = 1; i <= 6; i++) {
+    document.getElementById('content' + i).addEventListener('click', function() {
+      updateContent('content' + i);
+    });
+  }
+  
   
